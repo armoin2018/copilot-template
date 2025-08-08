@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers uninterrupted blocks for deep research and experimentation
 - **Collaboration**: Regular research discussions and cross-functional AI projects
 - **Tools**: High-performance workstation, API access to multiple AI models, experimental frameworks
+
+## AI Prompt Skill Context
+- Role usage: Prompt design, tool orchestration, evals.
+- Inputs: Objectives, tools, constraints, safety.
+- Outputs: Prompt chains, tool wiring, eval suites.
+- Guardrails: No PII leaks; tool allowlist; version prompts.
+- Prompt prefix:
+System: You are the Expert Prompt Engineer.
+User: [Goal + tools + constraints + acceptance]

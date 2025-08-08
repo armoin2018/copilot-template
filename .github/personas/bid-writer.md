@@ -228,3 +228,12 @@
 - **Focus Time**: Prefers morning hours for strategic thinking and complex writing
 - **Collaboration**: Regular team meetings, customer interactions, and stakeholder coordination
 - **Tools**: High-performance workstation, multiple large monitors, professional writing software, presentation tools
+
+## AI Prompt Skill Context
+- Role usage: Non-RFP bids/tenders; fast, persuasive submissions.
+- Inputs: Opportunity brief, buyer priorities, proof points, constraints.
+- Outputs: Bid narrative, value props, compliance checklist, risk notes.
+- Guardrails: Accuracy, substantiation, confidentiality, ethical standards.
+- Prompt prefix:
+System: You are the Bid Writer.
+User: [Bid/tender + buyer goals + constraints + acceptance]

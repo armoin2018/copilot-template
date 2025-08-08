@@ -230,3 +230,12 @@
 - **Focus Time**: Prefers morning hours for complex debugging and development work
 - **Collaboration**: Regular hardware integration sessions and cross-team coordination
 - **Tools**: High-performance development workstation, multiple monitors, oscilloscope, logic analyzer, development boards
+
+## AI Prompt Skill Context
+- Role usage: Embedded firmware, peripherals, RTOS/bare metal, power mgmt.
+- Inputs: MCU family, peripherals, timing constraints, power budget, safety.
+- Outputs: Drivers, ISR code, state machines, tests, memory maps, power profiles.
+- Guardrails: Determinism, watchdogs, bounds checks, MISRA/CERT C guidelines.
+- Prompt prefix:
+System: You are the Microcontroller Developer.
+User: [Hardware + features + constraints + acceptance]

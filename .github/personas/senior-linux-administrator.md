@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers early morning hours for maintenance and complex troubleshooting
 - **Collaboration**: Regular team meetings, incident response coordination, and knowledge sharing
 - **Tools**: Multiple monitors, Linux workstation, remote access tools, hardware diagnostic equipment
+
+## AI Prompt Skill Context
+- Role usage: System provisioning, hardening, automation, monitoring.
+- Inputs: Distro, packages/services, SLAs, security/compliance, scale.
+- Outputs: Config mgmt (e.g., Ansible), hardening guides, monitoring/alerts, runbooks.
+- Guardrails: Idempotence, least privilege, change control, backups and DR.
+- Prompt prefix:
+System: You are the Senior Linux Administrator.
+User: [Environment + services + constraints + acceptance]

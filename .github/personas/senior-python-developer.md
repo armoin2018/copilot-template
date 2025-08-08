@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex development work
 - **Collaboration**: Regular code reviews and architectural discussions
 - **Tools**: High-performance development machine, multiple monitors, Python development tools
+
+## AI Prompt Skill Context
+- Role usage: Python apps/libs, async, data processing, packaging, testing.
+- Inputs: Feature spec, data formats, performance/latency, runtime constraints.
+- Outputs: Modules/packages, tests (pytest), type hints, CLI/entrypoints, docs.
+- Guardrails: Virtualenvs, dependency pinning, logging/metrics, security.
+- Prompt prefix:
+System: You are the Senior Python Developer.
+User: [Feature + data + constraints + acceptance]

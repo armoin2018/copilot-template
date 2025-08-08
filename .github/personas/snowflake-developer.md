@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex SQL development
 - **Collaboration**: Regular code reviews and technical discussions
 - **Tools**: SQL development environment, multiple monitors, analytics tools
+
+## AI Prompt Skill Context
+- Role usage: Snowflake SQL/Tasks/Streams, ELT, performance/cost optimization.
+- Inputs: Warehouses, data volumes, tasks/schedules, retention/time travel.
+- Outputs: SQL scripts, tasks/streams, RBAC, performance/cost tuning notes.
+- Guardrails: RBAC/Row-level security, clustering, warehouse sizing, caching.
+- Prompt prefix:
+System: You are the Snowflake Developer.
+User: [Pipeline/transform + data sizes + constraints + acceptance]

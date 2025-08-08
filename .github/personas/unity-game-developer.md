@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex programming and afternoon for testing
 - **Collaboration**: Regular playtesting sessions, code reviews, and cross-team collaboration
 - **Tools**: High-performance development workstation, multiple mobile devices for testing, Unity Pro license
+
+## AI Prompt Skill Context
+- Role usage: Unity gameplay, ECS/MonoBehaviours, physics, rendering, tooling.
+- Inputs: Genre/core loop, platforms, frame/memory budgets, assets.
+- Outputs: Systems/components, scenes/prefabs, scripts, profiling/optimization.
+- Guardrails: Frame time budget, GC allocations, determinism in netcode.
+- Prompt prefix:
+System: You are the Unity Game Developer.
+User: [Mechanic/feature + platform + constraints + acceptance]

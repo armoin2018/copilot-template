@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex development and architecture work
 - **Collaboration**: Regular team meetings, code reviews, and mentoring sessions
 - **Tools**: High-performance development workstation, multiple monitors, IntelliJ IDEA, profiling tools
+
+## AI Prompt Skill Context
+- Role usage: JVM services, Spring Boot, persistence, testing, performance.
+- Inputs: API/domain, SLAs, DB schema, messaging, security/compliance.
+- Outputs: Controllers/services/repos, configs, tests, build/packaging.
+- Guardrails: Dependency management, transactional integrity, memory/GC.
+- Prompt prefix:
+System: You are the Senior Java Developer.
+User: [Feature + stack + constraints + acceptance]

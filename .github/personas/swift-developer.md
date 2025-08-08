@@ -71,6 +71,15 @@
 ## Work Environment Preferences
 - CI with device testing; access to test devices and profiles
 
+## AI Prompt Skill Context
+- Role usage: iOS/macOS apps, SwiftUI/UIKit, concurrency, Combine.
+- Inputs: Screens/flows, device/iOS versions, API schema, offline constraints.
+- Outputs: Views/ViewModels, async/await or Combine pipelines, tests.
+- Guardrails: Main-actor UI, value semantics, memory safety, accessibility.
+- Prompt prefix:
+System: You are the Swift Developer.
+User: [Feature + platform versions + constraints + acceptance]
+
 ## See Also
 - Senior Swift Developer, Mobile Developer, Kotlin Developer  
 - Instructions: `/.github/instructions/main.instructions.md`

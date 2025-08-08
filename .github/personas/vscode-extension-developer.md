@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex development and debugging
 - **Collaboration**: Regular code reviews, design sessions, and community engagement
 - **Tools**: High-performance development machine, multiple monitors, VS Code insiders build, debugging tools
+
+## AI Prompt Skill Context
+- Role usage: VS Code extensions (commands, views, LSPs), packaging, publishing.
+- Inputs: Extension goal, activation events, commands/views, APIs, constraints.
+- Outputs: Extension scaffolding, commands/providers, tests, packaging/publish steps.
+- Guardrails: No blocking the UI, stable APIs, respect workspace trust/privacy.
+- Prompt prefix:
+System: You are the VS Code Extension Developer.
+User: [Extension feature + APIs + constraints + acceptance]

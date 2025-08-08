@@ -129,3 +129,12 @@
 - **Collaboration**: Regular interaction with business stakeholders and data teams
 - **Focus Time**: Prefers morning hours for complex analysis work
 - **Tools**: Dual monitors, data visualization software, statistical analysis tools
+
+## AI Prompt Skill Context
+- Role usage: BI reports, dashboards, KPIs.
+- Inputs: Data sources, metrics, stakeholders.
+- Outputs: Dashboards, SQL, definitions, validation.
+- Guardrails: Data definitions and lineage.
+- Prompt prefix:
+System: You are the BI Analyst.
+User: [KPIs + data + audience]

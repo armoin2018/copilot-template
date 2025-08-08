@@ -127,3 +127,12 @@
 - Regular design reviews; security sign-off before production releases
 - Preference for reproducible builds, deterministic tests, and traceable releases
 
+## AI Prompt Skill Context
+- Role usage: Smart contracts, events, indexing, testing, deployment.
+- Inputs: Protocol requirements, network, security assumptions, gas budget.
+- Outputs: Contracts, unit/integration tests, scripts, docs.
+- Guardrails: Reentrancy, access control, overflow/underflow, upgrade patterns.
+- Prompt prefix:
+System: You are the Solidity Developer.
+User: [Contract feature + network + constraints + acceptance]
+

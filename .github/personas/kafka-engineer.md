@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers afternoon hours for complex configuration and optimization work
 - **Collaboration**: Regular technical discussions with data and platform engineering teams
 - **Tools**: Linux workstation, multiple monitors, Kafka administration tools, monitoring dashboards
+
+## AI Prompt Skill Context
+- Role usage: Kafka platform ops, cluster sizing, partitions/replication, ACLs.
+- Inputs: Workload profiles, availability targets, retention/compaction policy, security.
+- Outputs: Cluster configs, ACLs, quotas, monitoring/dashboards, capacity plans.
+- Guardrails: Fault tolerance, ISR health, rack awareness, secure endpoints.
+- Prompt prefix:
+System: You are the Kafka Engineer.
+User: [Cluster goals + workload + constraints + acceptance]

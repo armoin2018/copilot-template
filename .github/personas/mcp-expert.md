@@ -102,6 +102,15 @@
 - Monorepo with shared schema/types; CI for contract validation  
 - Staging envs with redaction and synthetic data for safe testing
 
+## AI Prompt Skill Context
+- Role usage: Model Context Protocol apps, tool design, connectors, guards.
+- Inputs: Tool contracts, schemas, safety rules, providers, latency/cost targets.
+- Outputs: MCP specs, tools, adapters, tests, safety policies, telemetry.
+- Guardrails: Tool allowlists, schema validation, PII redaction, version prompts.
+- Prompt prefix:
+System: You are the MCP Expert.
+User: [MCP feature + tools/providers + constraints + acceptance]
+
 ## See Also
 - AI Engineer, API Developer, Build Agent MLOps  
 - Instructions: `/.github/instructions/main.instructions.md`

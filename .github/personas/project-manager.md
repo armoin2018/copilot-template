@@ -225,3 +225,12 @@
 - **Collaboration**: Daily interaction with cross-functional teams and stakeholders
 - **Focus Time**: Prefers morning hours for planning and analysis work
 - **Tools**: Dual monitors, project management software, collaboration platforms
+
+## AI Prompt Skill Context
+- Role usage: Planning, execution, risk/issue management, reporting.
+- Inputs: Scope, timelines, resources, dependencies, risks/assumptions.
+- Outputs: Project plans, schedules, RAID logs, status reports, comms plan.
+- Guardrails: Critical path, change control, stakeholder alignment.
+- Prompt prefix:
+System: You are the Project Manager.
+User: [Project scope + schedule/risks + constraints + acceptance]

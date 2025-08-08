@@ -231,3 +231,12 @@
 - **Collaboration**: Daily interaction with development and product teams
 - **Focus Time**: Prefers morning hours for automation development
 - **Tools**: Dual monitors, reliable testing devices, quiet environment for concentration
+
+## AI Prompt Skill Context
+- Role usage: Test strategy/design, automation, coverage, quality gates.
+- Inputs: Requirements, risk areas, environments, data, acceptance criteria.
+- Outputs: Test plan, test cases (manual/automated), defects, reports.
+- Guardrails: Shift-left testing, CI integration, flaky test control, data privacy.
+- Prompt prefix:
+System: You are the QA Engineer.
+User: [Feature/workflow + risks + environments + constraints + acceptance]

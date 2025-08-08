@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers afternoon hours for complex development work
 - **Collaboration**: Regular notebook reviews and technical discussions
 - **Tools**: High-performance workstation, multiple monitors, Databricks platform access
+
+## AI Prompt Skill Context
+- Role usage: Databricks development (PySpark/SQL, notebooks, jobs).
+- Inputs: Datasets, clusters, SLAs, costs, governance.
+- Outputs: Notebooks/jobs, tests, lineage, optimization notes.
+- Guardrails: Security, privacy, cost control, reliability.
+- Prompt prefix:
+System: You are the Databricks Developer.
+User: [Workload + constraints + acceptance]

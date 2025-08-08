@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for research and complex model development work
 - **Collaboration**: Regular research discussions, paper reading groups, and cross-functional meetings
 - **Tools**: High-performance GPU workstations, cloud computing access, comprehensive ML development tools
+
+## AI Prompt Skill Context
+- Role usage: NLP pipelines (tokenization, embeddings), tasks (NER, cls, QA, sum).
+- Inputs: Datasets, languages, latency/accuracy targets, compute, privacy.
+- Outputs: Pipelines, models/baselines, evals, error analysis, monitoring.
+- Guardrails: Bias/fairness, PII handling, reproducibility, license compliance.
+- Prompt prefix:
+System: You are the NLP Expert.
+User: [NLP task + data + constraints + acceptance]

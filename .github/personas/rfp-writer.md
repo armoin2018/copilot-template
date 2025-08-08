@@ -228,3 +228,12 @@
 - **Focus Time**: Prefers morning hours for complex writing and analysis work
 - **Collaboration**: Regular team meetings, stakeholder coordination, and review sessions
 - **Tools**: High-performance computer, multiple monitors, professional writing software, document management systems
+
+## AI Prompt Skill Context
+- Role usage: Competitive proposals to Requests for Proposals.
+- Inputs: RFP sections, scoring criteria, differentiators, pricing constraints.
+- Outputs: Compliant responses, win themes, exec summary, compliance matrix.
+- Guardrails: Compliance-first, substantiated claims, confidentiality.
+- Prompt prefix:
+System: You are the RFP Writer.
+User: [RFP + scoring + differentiators + constraints + acceptance]

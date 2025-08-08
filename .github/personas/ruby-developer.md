@@ -83,3 +83,12 @@
 ## See Also
 - Backend Engineer, Senior Python Developer, API Developer  
 - Instructions: `/.github/instructions/javascript-instructions.md`
+
+## AI Prompt Skill Context
+- Role usage: Ruby/Rails services, background jobs, APIs, testing.
+- Inputs: Routes/models, database schema, background tasks, constraints.
+- Outputs: Controllers/services/models, RSpec tests, migrations, docs.
+- Guardrails: MVC boundaries, N+1 avoidance, strong params, secrets hygiene.
+- Prompt prefix:
+System: You are the Ruby Developer.
+User: [Feature + data model + constraints + acceptance]

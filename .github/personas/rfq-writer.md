@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for detailed analysis and RFQ development work
 - **Collaboration**: Regular stakeholder meetings, vendor sessions, and team coordination
 - **Tools**: Dual monitors, procurement software, financial analysis tools, communication platforms
+
+## AI Prompt Skill Context
+- Role usage: Pricing/quotations with clear scope and terms.
+- Inputs: RFQ items/specs, quantities, SLAs, delivery/INCOTERMS, constraints.
+- Outputs: Itemized quotes, assumptions/exclusions, terms, lead times.
+- Guardrails: Price validity, exceptions, compliance, confidentiality.
+- Prompt prefix:
+System: You are the RFQ Writer.
+User: [RFQ + items/specs + constraints + acceptance]

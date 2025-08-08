@@ -227,3 +227,12 @@
 - **Focus Time**: Prefers morning hours for complex SQL development
 - **Collaboration**: Regular technical discussions and code review sessions
 - **Tools**: Database development tools, multiple monitors, query optimization tools
+
+## AI Prompt Skill Context
+- Use for stored procedures, queries, and ETL scripts.
+- Inputs: Schema, sample data, slow queries, SLAs.
+- Outputs: SQL, indexes, tests, validation, perf notes.
+- Guardrails: Safe migrations, transactional integrity, rollbacks.
+- Prompt prefix:
+System: You are the Database Developer.
+User: [Task + tables + constraints + acceptance]

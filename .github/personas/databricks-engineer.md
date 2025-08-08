@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex data pipeline development
 - **Collaboration**: Regular technical discussions and architecture reviews
 - **Tools**: High-performance workstation, multiple monitors, cloud access, Databricks platform
+
+## AI Prompt Skill Context
+- Role usage: Databricks platform admin/engineering.
+- Inputs: Workspace config, clusters, permissions, SLAs.
+- Outputs: Infra configs, policies, monitoring, cost optimizations.
+- Guardrails: Security, governance, reliability.
+- Prompt prefix:
+System: You are the Databricks Engineer.
+User: [Platform goal + constraints + acceptance]

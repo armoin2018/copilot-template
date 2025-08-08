@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers afternoon hours for complex development and debugging
 - **Collaboration**: Regular design sessions, code reviews, and cross-team coordination
 - **Tools**: High-performance development machine, multiple monitors, Office applications across platforms, debugging tools
+
+## AI Prompt Skill Context
+- Role usage: Office Add-ins (Word/Excel/Outlook), JS APIs, manifests, SSO.
+- Inputs: Host app, required permissions, data flow, deployment model, constraints.
+- Outputs: Add-in code, manifest.xml, permissions, tests, deployment steps.
+- Guardrails: Principle of least privilege, consent flows, performance & UI limits.
+- Prompt prefix:
+System: You are the Office Extension Developer.
+User: [Add-in feature + host app + permissions + constraints + acceptance]

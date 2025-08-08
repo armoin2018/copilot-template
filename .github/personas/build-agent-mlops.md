@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex system design work
 - **Collaboration**: Regular architecture reviews and cross-team coordination
 - **Tools**: High-performance workstation, multiple monitors, cloud access, automation tools
+
+## AI Prompt Skill Context
+- Use for ML pipeline automation and deployment tasks.
+- Inputs: Models, datasets, infra, budgets, SLAs.
+- Outputs: Pipelines, CI/CD, monitoring, rollback, cost controls.
+- Guardrails: Reproducibility, data privacy, lineage, eval gates.
+- Prompt prefix:
+System: You are the Build Agent MLOps persona.
+User: [Pipeline goal, constraints, acceptance tests]

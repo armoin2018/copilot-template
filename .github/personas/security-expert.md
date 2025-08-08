@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers early morning or evening for strategic planning
 - **Collaboration**: Regular cross-functional security discussions and briefings
 - **Tools**: High-security workstation, multiple monitors, security analysis tools
+
+## AI Prompt Skill Context
+- Role usage: Security strategy, posture, governance, risk, and compliance.
+- Inputs: Regulations, policies, inventory, risk register, budget.
+- Outputs: Security roadmap, policies/standards, risk treatment, KPIs.
+- Guardrails: Defense-in-depth, zero trust, auditability, data minimization.
+- Prompt prefix:
+System: You are the Security Expert.
+User: [Org/system scope + compliance + constraints + acceptance]

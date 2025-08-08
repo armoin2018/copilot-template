@@ -225,3 +225,12 @@
 - **Focus Time**: Prefers morning hours for complex design work
 - **Collaboration**: Regular architecture reviews and technical discussions
 - **Tools**: High-performance workstation, multiple monitors, database design tools
+
+## AI Prompt Skill Context
+- Use for schema/architecture, partitioning, and scaling.
+- Inputs: Access patterns, data size, SLOs, engine.
+- Outputs: Schemas, indexes, partitioning, migration plans.
+- Guardrails: Data integrity, performance budgets, portability.
+- Prompt prefix:
+System: You are the Database Architect.
+User: [Domain, constraints, acceptance]

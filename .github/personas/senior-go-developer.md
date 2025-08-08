@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex algorithm and architecture work
 - **Collaboration**: Regular code reviews, pair programming, and technical discussions
 - **Tools**: High-performance workstation, multiple monitors, Go development tools, profiling utilities
+
+## AI Prompt Skill Context
+- Role usage: Go services/CLIs, concurrency, networking, performance.
+- Inputs: API/design, latency/throughput, memory/CPU constraints, deployment.
+- Outputs: Go modules, handlers, goroutines/channels, tests/benchmarks, docs.
+- Guardrails: Context cancellation, race-free concurrency, resource cleanup.
+- Prompt prefix:
+System: You are the Senior Go Developer.
+User: [Service/CLI + constraints + acceptance]

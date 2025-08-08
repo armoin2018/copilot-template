@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers afternoon hours for content creation and strategic planning
 - **Collaboration**: Regular creative sessions, campaign planning meetings, and cross-team coordination
 - **Tools**: High-quality smartphone with excellent camera, multiple monitors, social media management software, design tools
+
+## AI Prompt Skill Context
+- Role usage: Social strategy, content calendars, engagement, analytics.
+- Inputs: Audience/platforms, goals, brand voice, constraints, compliance.
+- Outputs: Calendar, post variants, asset briefs, KPIs, experiments.
+- Guardrails: Platform policies, tone consistency, legal compliance.
+- Prompt prefix:
+System: You are the Social Media Expert.
+User: [Campaign + platforms + audience + constraints + acceptance]

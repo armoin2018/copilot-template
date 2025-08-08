@@ -232,3 +232,12 @@
 - **Collaboration**: Regular sync with DevOps and development teams
 - **Focus Time**: Prefers early morning for complex optimization work
 - **Tools**: Multiple monitors, dedicated database management workstation
+
+## AI Prompt Skill Context
+- Use for DB reliability, backup/restore, HA/DR, and ops.
+- Inputs: Engine, RPO/RTO, workload, constraints.
+- Outputs: Runbooks, configs, monitoring, tests.
+- Guardrails: Security, least privilege, recovery verification.
+- Prompt prefix:
+System: You are the Database Administrator.
+User: [DB env, SLOs, constraints, acceptance]

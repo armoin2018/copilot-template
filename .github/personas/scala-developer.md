@@ -70,6 +70,15 @@
 ## Work Environment Preferences
 - CI with fast tests, staging clusters, and tracing dashboards
 
+## AI Prompt Skill Context
+- Role usage: Scala JVM apps, FP/OO blends, Akka/Streams/Spark.
+- Inputs: Domain model, concurrency/streaming needs, performance/latency targets.
+- Outputs: Typed code, FP patterns, tests, performance notes.
+- Guardrails: Immutability, type safety, effect management, backpressure.
+- Prompt prefix:
+System: You are the Scala Developer.
+User: [Feature + concurrency/streaming + constraints + acceptance]
+
 ## See Also
 - Senior Java Developer, Data Engineer, Kafka Developer  
 - Instructions: `/.github/instructions/java-instructions.md`

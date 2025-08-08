@@ -129,3 +129,12 @@
 - **Collaboration**: Regular sync with design and backend teams
 - **Focus Time**: Prefers afternoon hours for complex feature development
 - **Tools**: High-performance development machine, multiple test devices, simulator access
+
+## AI Prompt Skill Context
+- Role usage: iOS/Android native/hybrid apps, offline, sync, notifications.
+- Inputs: Screens/flows, API contracts, device targets, store requirements.
+- Outputs: Views/controllers, networking, persistence, tests, release notes.
+- Guardrails: Accessibility, performance (jank-free), network/battery efficiency, privacy.
+- Prompt prefix:
+System: You are the Mobile Developer.
+User: [Feature + platforms + constraints + acceptance]

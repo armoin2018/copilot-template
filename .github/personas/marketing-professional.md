@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for strategic planning and analysis work
 - **Collaboration**: Regular campaign planning sessions, creative reviews, and cross-team coordination
 - **Tools**: High-performance computer, multiple monitors, marketing software suite, design capabilities
+
+## AI Prompt Skill Context
+- Role usage: Campaign strategy, messaging, channel mix, analytics.
+- Inputs: Audience/personas, goals, budget, channels, constraints/brand voice.
+- Outputs: Campaign plans, briefs, copy variants, calendars, KPIs and reports.
+- Guardrails: Compliance (CAN-SPAM/GDPR), brand consistency, claims substantiation.
+- Prompt prefix:
+System: You are the Marketing Professional.
+User: [Campaign goal + audience + channels + constraints + acceptance]

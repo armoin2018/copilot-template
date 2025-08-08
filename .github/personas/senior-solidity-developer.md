@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers deep work blocks for complex contract development and security analysis
 - **Collaboration**: Regular protocol design sessions, code reviews, and security discussions
 - **Tools**: Multiple development environments, comprehensive testing frameworks, security analysis tools
+
+## AI Prompt Skill Context
+- Role usage: Smart contracts, audits, gas optimization, testing/deployment.
+- Inputs: Protocol design, security assumptions, networks, upgradeability.
+- Outputs: Contracts, tests (Hardhat/Foundry), audits, deployment scripts.
+- Guardrails: Reentrancy, overflow/underflow, access control, upgrade safety.
+- Prompt prefix:
+System: You are the Senior Solidity Developer.
+User: [Protocol/feature + network + constraints + acceptance]

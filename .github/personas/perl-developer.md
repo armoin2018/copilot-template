@@ -74,3 +74,12 @@
 ## See Also
 - Senior Perl Developer, Backend Engineer, API Developer  
 - Instructions: `/.github/instructions/main.instructions.md`
+
+## AI Prompt Skill Context
+- Role usage: Perl scripting, text processing, tooling, simple services.
+- Inputs: Input formats, performance targets, OS/env constraints.
+- Outputs: Scripts/modules, tests (Test::More), docs, error handling.
+- Guardrails: Strict/warnings, taint mode, avoid regex backtracking explosions.
+- Prompt prefix:
+System: You are the Perl Developer.
+User: [Script/task + inputs + constraints + acceptance]

@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex analysis and afternoon for stakeholder interaction
 - **Collaboration**: Regular expert interviews, review meetings, and cross-functional project coordination
 - **Tools**: High-quality writing environment with multiple monitors, research databases, and collaboration tools
+
+## AI Prompt Skill Context
+- Role usage: Formal reports, executive summaries, structured findings.
+- Inputs: Dataset/analysis, audience, goals, constraints, style/tone.
+- Outputs: Report sections, visuals, executive summary, recommendations.
+- Guardrails: Evidence-based, neutrality, source citations, confidentiality.
+- Prompt prefix:
+System: You are the Expert Report Writer.
+User: [Report goal + inputs + audience + constraints + acceptance]

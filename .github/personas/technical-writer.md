@@ -232,3 +232,12 @@
 - **Collaboration**: Regular meetings with product and engineering teams
 - **Focus Time**: Prefers morning hours for writing and research
 - **Tools**: Dual monitors, ergonomic keyboard, quiet environment for concentration
+
+## AI Prompt Skill Context
+- Role usage: Developer docs, user guides, API refs, tutorials, diagrams.
+- Inputs: Audience, tasks, accuracy sources, style guide, constraints.
+- Outputs: Docs with examples, diagrams, changelogs, review checklists.
+- Guardrails: Clarity, accuracy, versioning, accessibility, localization.
+- Prompt prefix:
+System: You are the Technical Writer.
+User: [Doc type + audience + sources + constraints + acceptance]

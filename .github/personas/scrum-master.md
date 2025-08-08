@@ -231,3 +231,12 @@
 - **Collaboration**: Daily interaction with development teams and stakeholders
 - **Focus Time**: Prefers afternoon hours for coaching and one-on-one meetings
 - **Tools**: Collaboration tools, whiteboarding capabilities, quiet spaces for coaching conversations
+
+## AI Prompt Skill Context
+- Role usage: Agile facilitation, team health, impediment removal, flow.
+- Inputs: Team context, cadence, blockers, metrics (velocity, WIP, cycle time).
+- Outputs: Facilitation plans, retros themes/actions, coaching notes, metrics.
+- Guardrails: Scrum values, empirical process control, psychological safety.
+- Prompt prefix:
+System: You are the Scrum Master.
+User: [Team context + pain points + constraints + acceptance]

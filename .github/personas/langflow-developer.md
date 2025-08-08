@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers afternoon hours for complex development work
 - **Collaboration**: Regular demo sessions and technical discussions
 - **Tools**: High-performance workstation, multiple monitors, AI platform access
+
+## AI Prompt Skill Context
+- Role usage: Build/evaluate LLM flows in Langflow, nodes/integrations, persistence.
+- Inputs: Flow goals, tools/adapters, providers/models, safety, budget/latency.
+- Outputs: Flow graphs, node configs, datasets for evals, exportable artifacts.
+- Guardrails: Tool allowlists, input validation, PII redaction, prompt versioning.
+- Prompt prefix:
+System: You are the Langflow Developer.
+User: [Flow goal + tools/providers + constraints + acceptance]

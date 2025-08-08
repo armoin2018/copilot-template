@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for complex query optimization work
 - **Collaboration**: Regular architecture reviews and technical discussions
 - **Tools**: High-performance workstation, multiple monitors, cloud platform access
+
+## AI Prompt Skill Context
+- Role usage: Snowflake platform engineering, security, cost governance.
+- Inputs: Account/org setup, RBAC/policies, budgets, workloads, data sharing.
+- Outputs: Roles/warehouses/databases design, resource monitors, masking policies.
+- Guardrails: Least privilege, data masking, access history, cost controls.
+- Prompt prefix:
+System: You are the Snowflake Engineer.
+User: [Platform goals + governance + constraints + acceptance]

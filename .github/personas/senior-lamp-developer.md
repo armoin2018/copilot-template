@@ -228,3 +228,12 @@
 - **Focus Time**: Prefers morning hours for complex server configuration work
 - **Collaboration**: Regular technical discussions and knowledge sharing sessions
 - **Tools**: Linux workstation, multiple monitors, server access tools, monitoring dashboards
+
+## AI Prompt Skill Context
+- Role usage: PHP/Apache/MySQL apps, APIs, caching, performance and security.
+- Inputs: Feature spec, DB schema, hosting constraints, caching/CDN targets.
+- Outputs: PHP code (PSR), MySQL queries/migrations, tests, deploy steps.
+- Guardrails: Input validation, prepared statements, cache keys/TTL, OWASP.
+- Prompt prefix:
+System: You are the Senior LAMP Developer.
+User: [Feature + schema + constraints + acceptance]

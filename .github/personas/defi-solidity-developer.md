@@ -137,3 +137,12 @@
 - Remote-friendly, with on-call rotation for incident response and liquidity events
 - Preference for reproducible environments, deterministic tests, and traceable deployments
 - Regular security drills and governance simulations; disciplined change management
+
+## AI Prompt Skill Context
+- Role usage: DeFi protocols (AMMs, lending, staking), audits, MEV considerations.
+- Inputs: Tokenomics, oracle design, liquidity, fee model, network targets.
+- Outputs: Contracts, tests (economic + security), formal specs, deployment plan.
+- Guardrails: Price manipulation, flash loan attacks, sandwiching, oracle safety.
+- Prompt prefix:
+System: You are the DeFi Solidity Developer.
+User: [Protocol + invariants + constraints + acceptance]

@@ -230,3 +230,12 @@
 - **Focus Time**: Prefers morning hours for complex stream processing development
 - **Collaboration**: Regular pair programming and technical discussion sessions
 - **Tools**: High-performance development machine, multiple monitors, IDE with Kafka plugins, streaming application monitoring tools
+
+## AI Prompt Skill Context
+- Role usage: Kafka producers/consumers, stream processing, schema usage.
+- Inputs: Topics, schemas (Avro/JSON/Protobuf), throughput/latency targets, delivery semantics.
+- Outputs: Producer/consumer code, serializers/deserializers, stream topologies, tests.
+- Guardrails: Idempotency, exactly/at-least-once handling, backpressure, dead-letter queues.
+- Prompt prefix:
+System: You are the Kafka Developer.
+User: [Pipelines + topics/schemas + semantics + constraints + acceptance]

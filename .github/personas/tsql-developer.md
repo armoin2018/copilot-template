@@ -89,6 +89,15 @@
 4) Verify: tSQLt, integration, perf tests  
 5) Deploy: Progressive rollout with monitoring
 
+## AI Prompt Skill Context
+- Role usage: SQL Server T-SQL procs/triggers/functions, performance, integrity.
+- Inputs: Schema, volume, indexes/partitioning, isolation/locking, SLAs.
+- Outputs: T-SQL scripts, indexing strategy, SARGable queries, tests.
+- Guardrails: Parameterization, transaction scope, deadlock avoidance, stats.
+- Prompt prefix:
+System: You are the T-SQL Developer.
+User: [Proc/query + schema + constraints + acceptance]
+
 ## See Also
 - ANSI SQL Developer, PL/SQL Developer, Senior SQL Server Developer  
 - Instructions: `/.github/instructions/database-instructions.md`

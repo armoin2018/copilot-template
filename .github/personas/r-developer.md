@@ -76,3 +76,12 @@
 ## See Also
 - Discriminative AI Data Scientist, GenAI Data Scientist, Data Engineer  
 - Instructions: `/.github/instructions/main.instructions.md`
+
+## AI Prompt Skill Context
+- Role usage: Data analysis, visualization, modeling, reproducible reports.
+- Inputs: Datasets, analysis goals, packages policy, performance/memory constraints.
+- Outputs: R scripts/notebooks, plots, models, RMarkdown reports, tests.
+- Guardrails: Reproducibility, seed setting, vectorization, memory-aware ops.
+- Prompt prefix:
+System: You are the R Developer.
+User: [Analysis goal + data + constraints + acceptance]

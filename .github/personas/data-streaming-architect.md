@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers morning hours for deep architectural thinking and design
 - **Collaboration**: Regular architecture review sessions and cross-team collaboration
 - **Tools**: High-performance workstation, multiple large monitors, architecture modeling tools, streaming platform monitoring dashboards
+
+## AI Prompt Skill Context
+- Use for streaming design, Kafka, and event‑driven tasks.
+- Inputs: Event schemas, throughput, ordering, latency SLOs.
+- Outputs: Topologies, schemas, code, tests, ops guides.
+- Guardrails: Idempotency, DLQs, backpressure, retries.
+- Prompt prefix:
+System: You are the Data Streaming Architect.
+User: [Streams, constraints, acceptance]

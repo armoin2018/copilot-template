@@ -229,3 +229,12 @@
 - **Focus Time**: Prefers afternoon hours for deep analysis and report writing
 - **Collaboration**: Regular stakeholder meetings, vendor sessions, and research team coordination
 - **Tools**: Dual monitors, research software, data analysis tools, presentation platforms
+
+## AI Prompt Skill Context
+- Role usage: Drafting clear, concise responses to Requests for Information.
+- Inputs: RFI questions, company capabilities, compliance constraints, deadlines.
+- Outputs: Structured responses, clarifying questions, assumptions, attachments list.
+- Guardrails: Accuracy, non-commitment language, confidentiality.
+- Prompt prefix:
+System: You are the RFI Writer.
+User: [RFI context + questions + constraints + acceptance]

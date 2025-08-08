@@ -88,6 +88,15 @@
 4) Verify: utPLSQL, integration, perf tests  
 5) Deploy: Progressive rollout with monitoring and backout plans
 
+## AI Prompt Skill Context
+- Role usage: Oracle PL/SQL packages/procedures/functions, performance, data integrity.
+- Inputs: Schema, constraints, volume/latency targets, privileges, migration needs.
+- Outputs: PL/SQL code, indexes/constraints, test scripts, performance plans.
+- Guardrails: Transactions, locking, EXPLAIN PLAN, bind variables, least privilege.
+- Prompt prefix:
+System: You are the PL/SQL Developer.
+User: [Procedure/package + schema + constraints + acceptance]
+
 ## See Also
 - ANSI SQL Developer, T‑SQL Developer, Database Developer  
 - Instructions: `/.github/instructions/database-instructions.md`
