@@ -1,143 +1,206 @@
-# Base6 Builder Coding & Style Guide
+# Universal Project Coding & Management Guide
 
-This guide defines coding standards and best practices for multi-language development projects. Language-specific instructions are organized in separate files for better maintainability and clarity.
+This guide defines universal coding standards, project management workflows, and coordination practices for multi-language development projects. Language- and framework-specific guidance is located in `.github/instructions/`. AI personas for specialized domain guidance are located in `.github/personas/`.
 
-⸻
+---
 
-## 📂 Project Architecture
+## 1. Project Architecture & Management
 
-✅ **Rule: Enforce API-first architecture**
-- Backend provides API logic and returns JSON/data only
-- Frontend consumes API data and renders UI
-- Strict separation between data and presentation layers
+- **API-First Architecture**  
+  - Backend exposes only API endpoints (returns JSON/data).  
+  - Frontend consumes APIs for all UI rendering.  
+  - Strict separation of data and presentation layers.
 
-✅ **Rule: Language-specific best practices**
-- Follow language idioms and conventions
-- Use appropriate frameworks and libraries for each language
-- Maintain consistent patterns across similar codebases
+- **Language-Specific Best Practices**  
+  - Always follow idioms/conventions from `.github/instructions/`.
+  - Use established frameworks and libraries per language.
+  - Maintain consistency across similar codebases.
 
-✅ **Rule: Documentation & Project Management**
-- Create comprehensive documentation under `wiki/` folder
-- Maintain project tracking files under `notes/` folder
-- Use version management with YYYY.MM.DD-<build#> format
+- **Project Management Files & Structure**  
+  ```
+  .github/
+  ├── copilot-instructions.md        # Main index (this file)
+  ├── instructions/                  # Language-specific instructions
+  ├── personas/                      # AI personas for role/domain guidance
+  ├── REQUIREMENTS.md                # Project requirements/specs
+  ├── PLAN.md                        # Execution plan/tasks/priorities
+  ├── CHANGELOG.md                   # Version history, completed changes
+  ├── WHITELIST.md                   # Approved dependencies/modules
+  ├── BLACKLIST.md                   # Prohibited/deprecated modules/practices
+  └── wiki/                          # Project documentation (GitHub wiki)
+  ```
+  - **Use `YYYY.MM.DD-<#####>` format for versioning.**
 
-⸻
+---
 
-## 🌐 Language-Specific Instructions
+## 2. Workflow & Change Management
 
-This project uses modular instruction files for different programming languages and technologies. Each file contains detailed coding standards, best practices, and AI linting hints specific to that language.
+### End-to-End Project Workflow
+1. **Requirements:**  
+   - Document all specs in `REQUIREMENTS.md`.
+2. **Planning:**  
+   - Create/update task lists in `PLAN.md`, referencing requirements and instructions.
+3. **Development:**  
+   - Follow `.github/instructions/` standards and reference relevant personas.
+4. **Tracking:**  
+   - Record all completed changes in `CHANGELOG.md` (most recent at top).
+   - Increment build number on each commit.
+5. **Documentation:**  
+   - Update the `wiki/` for all features and changes.
+6. **Dependency Management:**  
+   - Only use libraries listed in `WHITELIST.md`.  
+   - Update `BLACKLIST.md` for prohibited/deprecated/insecure packages.
 
-### **Core Languages**
-- **[C Instructions](.github/instructions/c-instructions.md)** - C development standards and best practices
-- **[C++ Instructions](.github/instructions/cpp-instructions.md)** - Modern C++ coding guidelines
-- **[Go Instructions](.github/instructions/go-instructions.md)** - Go idioms and patterns
-- **[Java Instructions](.github/instructions/java-instructions.md)** - Java enterprise development standards
+### Change Management Workflow
+- Always start next task from `PLAN.md`.
+- Select proper persona(s) from `.github/personas/` for guidance.
+- On completion, update `CHANGELOG.md` with:
+  - version, date, summary, instructions/personas used.
+- Use `CHANGELOG.md` to resume progress and inform team.
 
-### **Web Development**
-- **[JavaScript Instructions](.github/instructions/javascript-instructions.md)** - Modern JavaScript/ES6+ standards
-- **[TypeScript Instructions](.github/instructions/typescript-instructions.md)** - Type-safe TypeScript development
-- **[WordPress Instructions](.github/instructions/wordpress-instructions.md)** - WordPress plugin/theme development
+---
 
-### **Data & Infrastructure**
-- **[Database Instructions](.github/instructions/database-instructions.md)** - SQL and database design standards
-- **[Python Instructions](.github/instructions/python-instructions.md)** - Python development best practices
-- **[C# Instructions](.github/instructions/csharp-instructions.md)** - C# and .NET development standards
+## 3. Coding & Review Standards
 
-### **Shell & Automation**
-- **[Shell Instructions](.github/instructions/sh-instructions.md)** - Shell scripting and automation standards
+### Universal Rules & Best Practices
+- **Separation of Concerns:**  
+  - Never mix presentation and data logic.
+- **Consistent Naming:**  
+  - camelCase (JS/TS), snake_case (Python), etc.
+- **Descriptive Variables/Functions:**  
+  - No ambiguous names (e.g., avoid `data`, `foo`, `bar`).
+- **Comment Complex Logic:**  
+  - No redundant or obvious comments.
+- **Keep Functions Small:**  
+  - Single-responsibility; modular design.
+- **Consistent File Structure:**  
+  - Group by domain/functionality; predictable imports/exports.
+- **Formatting:**  
+  - Use language-standard linters (Prettier, gofmt, rustfmt, Black, etc.).
+  - Max line length: 100 chars.
+  - Trailing commas in multiline structures.
+  - Follow language-specific indentation.
 
-⸻
+---
 
-## 🚦 Universal AI Enforcement Rules
+### Security Guidelines
+- **Input Validation & Sanitization:**  
+  - All user and external data must be validated/sanitized.
+  - Use parameterized queries for all database operations.
+- **Authentication & Authorization:**  
+  - Never hardcode secrets or API keys (use secure vaults/envs).
+  - Use RBAC where appropriate.
+- **Data Protection:**  
+  - Always use HTTPS for external comms.
+  - Encrypt sensitive data at rest/in-transit.
+  - Comply with GDPR/CCPA and other data privacy laws.
+- **Emerging Standard:**  
+  - **Supply chain security:**  
+    - Use automated tools (e.g., Dependabot, npm audit) to scan dependencies.
+    - Regularly review/rotate secrets and credentials.
 
-The following rules apply across all languages and are enforced by AI linting:
+---
 
-✅ **Code Quality**
-- Enforce clean separation of concerns
-- Require meaningful variable and function names
-- Block code smells and anti-patterns
-- Enforce appropriate error handling
+### Performance & Resource Management
+- Avoid N+1 queries.
+- Implement caching and pagination for large data.
+- Monitor and profile critical code (use APM where feasible).
+- Use connection pooling; always close open resources.
 
-✅ **Performance**
-- Block string concatenation inside loops
-- Require efficient data structure usage
-- Enforce memory management best practices
-- Optimize database queries and API calls
+---
 
-✅ **Security**
-- Require input validation and sanitization
-- Enforce secure coding practices
-- Block known vulnerability patterns
-- Require proper authentication and authorization
+### Error Handling & Logging
+- Use structured error handling (try-catch/finally or equivalents).
+- Custom error types for domain-specific errors.
+- Return meaningful error messages (never leak stack traces to end-users).
+- Use consistent logging levels (DEBUG, INFO, WARN, ERROR).
+- Correlate logs with request/trace IDs.
+- **Never log PII/secrets.**
+- Use structured logging (JSON) if supported.
 
-✅ **Maintainability**
-- Prefer composition over complex inheritance
-- Use design patterns appropriately
-- Enforce consistent coding styles
-- Require comprehensive documentation
+---
 
-✅ **Testing**
-- Implement comprehensive test coverage
-- Include unit, integration, and regression tests
-- Use appropriate testing frameworks
-- Test error scenarios and edge cases
+### Testing Standards
+- **Unit Tests:**  
+  - All new functions must have unit tests.
+  - Target 80%+ code coverage.
+  - Use Arrange-Act-Assert; descriptive test names.
+- **Integration Tests:**  
+  - Critical workflows must have integration tests; mock external dependencies.
+- **Test File Structure:**  
+  - All tests in `tests/`, named `{version}-{filename}.{ext}`.
+  - Use `describe` blocks for grouping.
+- **CI/CD Integration:**  
+  - Tests must pass before merge.
+  - Code coverage reported in pipeline.
 
-⸻
+---
 
-## 📋 Project Workflow
+### Accessibility & Compliance
+- **Accessibility:**  
+  - All UI must meet [WCAG 2.1 AA](https://www.w3.org/WAI/WCAG21/quickref/) accessibility standards.
+  - Use semantic HTML5 elements and ARIA attributes.
+- **REST API Standards:**  
+  - Follow [OpenAPI/Swagger](https://swagger.io/specification/) for API docs.
+  - Use proper HTTP status codes and methods.
+- **Legal & Licensing:**  
+  - All code must comply with open-source and company licensing.
+  - Document third-party code usage.
 
-### **Development Process**
-1. **Setup**: Create language-specific `.github/instructions/` files
-2. **Development**: Follow language-specific coding standards
-3. **Review**: Use AI linting to enforce standards automatically
-4. **Testing**: Implement comprehensive test coverage
-5. **Documentation**: Maintain current documentation in `wiki/`
+---
 
-### **File Organization**
-```
-.github/
-├── copilot-instructions.md          # This file - main instruction index
-└── instructions/                    # Language-specific instruction files
-    ├── c-instructions.md
-    ├── cpp-instructions.md
-    ├── csharp-instructions.md
-    ├── database-instructions.md
-    ├── go-instructions.md
-    ├── java-instructions.md
-    ├── javascript-instructions.md
-    ├── main.instructions.md         # Universal rules
-    ├── python-instructions.md
-    ├── sh-instructions.md
-    ├── typescript-instructions.md
-    └── wordpress-instructions.md
-```
+## 4. AI Personas & Specialized Guidance
 
-### **Version Management**
-- Use YYYY.MM.DD-<build#> format (e.g., 2025.08.06-001)
-- Add incremental build number comments to code updates
-- Maintain version consistency across project components
+- Use role/domain-specific AI personas in `.github/personas/` for code review, guidance, and prompt engineering.
+- Reference persona templates for creating new roles.
+- Encourage AI-assisted code reviews—**always validate Copilot/AI code before merging.**
 
-⸻
+---
 
-## 📚 Integration with Development Tools
+## 5. Development Tooling & Automation
 
-### **AI Code Assistance**
-- These instructions are optimized for GitHub Copilot, Cursor, and similar AI tools
-- Language-specific files provide detailed context for better code suggestions
-- Universal rules ensure consistency across different languages
+- Enforce linters/formatters per language (configured in repo).
+- Integrate automated dependency updates/scanning (e.g., Dependabot).
+- Generate and maintain API documentation from code comments.
+- Automate documentation updates with each version.
+- Use CI/CD pipelines for test, lint, build, deploy, and security checks.
+- Leverage `CHANGELOG.md` for automated release notes and reporting.
+- Cross-reference all documentation and code changes in wiki.
 
-### **Linting and Formatting**
-- Configure language-specific linters to enforce these standards
-- Use automated formatting tools (prettier, gofmt, rustfmt, etc.)
-- Integrate with CI/CD pipelines for automatic enforcement
+---
 
-### **Documentation Generation**
-- Generate API documentation from code comments
-- Maintain wiki documentation with cross-references
-- Update documentation with each version increment
+## 6. GitHub Copilot & AI Code Assistance
 
-⸻
+- **Prompt Engineering:**  
+  - Write clear, descriptive comments and meaningful variable names.
+  - Break complex problems into small, modular functions.
+- **Review Process:**  
+  - All Copilot/AI code must be reviewed and tested before acceptance.
+  - Copilot suggestions must comply with repo patterns and standards.
+- **Context Management:**  
+  - Keep related code together for best context.
+  - Document complex business logic to aid AI suggestions.
 
+---
 
+## 7. Troubleshooting & Help
 
+- If Copilot suggestions lack context, check naming and file structure.
+- For poor test/code suggestions, ensure files follow naming conventions and established patterns.
+- Review persona and instruction files for specific guidance.
+- Consult the `wiki/` and codebase for similar implementations.
 
+---
+
+## 8. Additional Recommendations (2025 Standards)
+- **[NEW] Adopt OpenTelemetry for distributed tracing across backend services.**
+- **[NEW] Use GitHub Advanced Security (if available) for secret scanning and code scanning.**
+- **[NEW] Ensure all third-party dependencies are SBOM (Software Bill of Materials) tracked for security.**
+- **[NEW] Require code review sign-off from at least one human and one AI persona for critical PRs.**
+- **[NEW] Prefer Infrastructure as Code (IaC) for all environment and deployment definitions (e.g., Terraform, Ansible, etc.).**
+- **[NEW] Containerize all deployable applications; document build/run in the wiki.**
+- **[NEW] Use DORA metrics (Deployment Frequency, Lead Time for Changes, Change Failure Rate, Time to Restore Service) to measure and optimize delivery performance.**
+
+---
+
+*Updated: 2025-08-08*
