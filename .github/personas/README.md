@@ -27,6 +27,7 @@ This directory contains detailed personas for all team members required for a co
 - **[Build Agent MLOps](build-agent-mlops.md)** - ML pipeline automation and deployment
 - **[Databricks Engineer](databricks-engineer.md)** - Databricks platform administration and Apache Spark optimization
 - **[Databricks Developer](databricks-developer.md)** - PySpark development and data pipeline creation
+ - **[R Developer](r-developer.md)** - R for analytics, modeling, reporting, and Shiny apps
 - **[Snowflake Engineer](snowflake-engineer.md)** - Snowflake platform administration and cloud data warehousing
 - **[Snowflake Developer](snowflake-developer.md)** - Snowflake SQL development and analytics engineering
 - **[Kafka Engineer](kafka-engineer.md)** - Apache Kafka infrastructure and stream processing
@@ -41,21 +42,34 @@ This directory contains detailed personas for all team members required for a co
 - **[Senior Node.js Developer](senior-nodejs-developer.md)** - Node.js backend development
 - **[Senior LAMP Developer](senior-lamp-developer.md)** - Linux, Apache, MySQL, PHP stack
 - **[Senior Python Developer](senior-python-developer.md)** - Advanced Python development
+ - **[JavaScript Developer](javascript-developer.md)** - Modern JavaScript for frontend and Node.js services
+- **[Ruby Developer](ruby-developer.md)** - Ruby/Rails backend development and APIs
 - **[Senior C# Developer](senior-csharp-developer.md)** - .NET and C# development
 - **[Senior C++ Developer](senior-cpp-developer.md)** - Systems programming and performance
 - **[Senior Rust Developer](senior-rust-developer.md)** - Systems programming with Rust
 - **[Senior Perl Developer](senior-perl-developer.md)** - Perl scripting and automation
+ - **[Perl Developer](perl-developer.md)** - Perl services, automation, and data processing
 - **[Senior Swift Developer](senior-swift-developer.md)** - iOS and macOS development
+ - **[Swift Developer](swift-developer.md)** - iOS/macOS app development with Swift
+- **[Kotlin Developer](kotlin-developer.md)** - Android and/or server-side Kotlin (Ktor/Spring Boot)
 - **[Senior TypeScript Developer](senior-typescript-developer.md)** - Type-safe JavaScript development
+ - **[TypeScript Developer](typescript-developer.md)** - Type-safe apps and libraries (frontend/Node)
+ - **[Scala Developer](scala-developer.md)** - JVM services and data pipelines with Scala
 
 ### **Engineering - Frontend & Mobile**
 - **[Frontend Engineer](frontend-engineer.md)** - User interface development and user experience
 - **[Mobile Developer](mobile-developer.md)** - iOS and Android application development
 - **[Senior React Native Developer](senior-react-native-developer.md)** - Cross-platform mobile development
+- **[React Native Developer](react-native-developer.md)** - Cross-platform mobile apps with RN and native integrations
 - **[Responsive Web Developer](responsive-web-developer.md)** - Mobile-first web development
 - **[Progressive Web Developer](progressive-web-developer.md)** - PWA development and offline capabilities
+- **[React Developer](react-developer.md)** - Modern React apps (SPA/SSR/SSG) with strong a11y and performance
 - **[GenAI Chat Developer](genai-chat-developer.md)** - Conversational AI interface development
 - **[UI/UX Developer](ui-ux-developer.md)** - Design implementation and user experience
+- **[HTML5 Developer](html5-developer.md)** - Semantic, accessible, SEO‑friendly markup
+- **[CSS Developer](css-developer.md)** - Scalable, responsive, token-driven styling
+- **[jQuery Expert](jquery-expert.md)** - Legacy maintenance and modernization of jQuery apps
+- **[Bootstrap Expert](bootstrap-expert.md)** - Bootstrap theming, utilities, and component governance
 
 ### **Database & Storage**
 - **[Database Administrator](database-administrator.md)** - Database management and optimization
