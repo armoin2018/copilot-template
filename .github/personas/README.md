@@ -64,6 +64,10 @@ This directory contains detailed personas for all team members required for a co
 - **[Senior MongoDB Developer](senior-mongodb-developer.md)** - NoSQL MongoDB development
 - **[Senior MySQL Developer](senior-mysql-developer.md)** - MySQL database development
 - **[Senior SQL Server Developer](senior-sql-server-developer.md)** - Microsoft SQL Server development
+- **[SQL, T‑SQL & PL/SQL Developer](sql-tsql-plsql-developer.md)** - Cross-engine SQL development for SQL Server and Oracle
+- **[ANSI SQL Developer](ansi-sql-developer.md)** - Vendor‑neutral SQL development across engines
+- **[T‑SQL Developer](tsql-developer.md)** - Microsoft SQL Server stored code and performance
+- **[PL/SQL Developer](plsql-developer.md)** - Oracle Database packages and performance tuning
 
 ### **Infrastructure & Operations**
 - **[DevOps Engineer](devops-engineer.md)** - Infrastructure automation and deployment pipelines
@@ -84,6 +88,8 @@ This directory contains detailed personas for all team members required for a co
 - **[Office Extension Developer](office-extension-developer.md)** - Microsoft Office Add-ins and Microsoft 365 integration
 - **[VS Code Extension Developer](vscode-extension-developer.md)** - VS Code extensions and developer tooling
 - **[Junior Developer](junior-developer.md)** - Entry-level development with growth focus
+- **[Solidity Developer](solidity-developer.md)** - Smart contracts and Ethereum/Web3 development
+- **[DeFi Solidity Developer](defi-solidity-developer.md)** - DeFi protocols, tokenomics, and risk-controlled smart contracts
 
 ### **Documentation & Communication**
 - **[Technical Writer](technical-writer.md)** - Documentation and knowledge management
