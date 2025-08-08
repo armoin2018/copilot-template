@@ -98,6 +98,7 @@ This directory contains detailed personas for all team members required for a co
 - **[Professional WordPress Developer](professional-wordpress-developer.md)** - WordPress themes, plugins, and customization
 - **[Expert Prompt Engineer](expert-prompt-engineer.md)** - AI prompt design and optimization
 - **[Langflow Developer](langflow-developer.md)** - Visual AI workflow development and LLM integration
+- **[MCP Expert](mcp-expert.md)** - Model Context Protocol servers, tool schemas, and safe integrations
 - **[Microcontroller Developer](microcontroller-developer.md)** - Embedded systems and IoT device programming
 - **[Office Extension Developer](office-extension-developer.md)** - Microsoft Office Add-ins and Microsoft 365 integration
 - **[VS Code Extension Developer](vscode-extension-developer.md)** - VS Code extensions and developer tooling
