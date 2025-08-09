@@ -116,6 +116,11 @@ This directory contains detailed personas for all team members required for a co
 - **[RFI Writer](rfi-writer.md)** - Request for Information and market research
 - **[Bid Writer](bid-writer.md)** - Comprehensive bid development and competitive positioning
 
+### **Marketing & Growth**
+- **[Marketing Professional](marketing-professional.md)** - Multi‑channel growth strategy, campaigns, and analytics
+- **[Social Media Expert](social-media-expert.md)** - Platform‑native strategy, content, and community management
+- **[SEO Expert](seo-expert.md)** - Technical, on‑page, and off‑page SEO for organic growth
+
 ## Persona Structure
 
 Each persona file follows a consistent structure to provide comprehensive role information:
